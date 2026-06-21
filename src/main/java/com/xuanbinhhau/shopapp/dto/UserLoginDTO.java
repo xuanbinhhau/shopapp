@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.time.Instant;
 import java.util.Date;
 
 @Setter
@@ -13,16 +12,8 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDTO {
-    @JsonProperty("fullname")
-    String fullName;
+public class UserLoginDTO {
     @JsonProperty("phone_number")
     String phoneNumber;
-
-    String address;
     String password;
-    @JsonProperty("date_of_birth")
-    Date dateOfBirth;
-    Boolean facebook_account_id;
-    Boolean google_account_id;
 }
